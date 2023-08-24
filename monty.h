@@ -1,6 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
-#include<stdio.h>
+
+#include<stdlib.h>
+#include <stdio.h>
 #include<sys/types.h>
 #include<unistd.h>
 #include<fcntl.h>
@@ -36,7 +38,7 @@ typedef struct instruction_s
 } instruction_t;
 void pint(stack_t **head, unsigned int num);
 void f_push(stack_t **head, unsigned int num);
-void f_piall(stact_t **head, unsigned int num);
+void f_pall(stack_t **head, unsigned int num);
 /**
  * struct bus_s - variable -args, line, file, line content
  * @args: value
@@ -49,8 +51,9 @@ typedef struct bus_s
 {
 	char *arg;
 	FILE *file;
+	char *content;
 	int lifi;
-}bus_t
+}bus_t;
 extern bus_t bus;
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
