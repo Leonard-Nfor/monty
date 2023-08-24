@@ -35,6 +35,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void pint(stack_t **head, unsigned int num);
+void f_push(stack_t **head, unsigned int num);
+void f_piall(stact_t **head, unsigned int num);
 /**
  * struct bus_s - variable -args, line, file, line content
  * @args: value
@@ -50,3 +52,6 @@ typedef struct bus_s
 	int lifi;
 }bus_t
 extern bus_t bus;
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+void free_stack(stack_t *head);
