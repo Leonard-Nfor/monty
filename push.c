@@ -5,7 +5,7 @@
  * @num: line number
  * Return: nothing
  */
-void f_push(stack_t **head, unsigned int num)
+void push(stack_t **head, unsigned int num)
 {
 	int n, j = 0, flag = 0;
 

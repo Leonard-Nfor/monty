@@ -37,8 +37,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void pint(stack_t **head, unsigned int num);
-void f_push(stack_t **head, unsigned int num);
-void f_pall(stack_t **head, unsigned int num);
+void push(stack_t **head, unsigned int num);
+void pall(stack_t **head, unsigned int num);
 /**
  * struct bus_s - variable -args, line, file, line content
  * @args: value
@@ -58,20 +58,20 @@ extern bus_t bus;
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void free_stack(stack_t *head);
-void f_pop(stack_t **head, unsigned int counter);
-void f_swap(stack_t **head, unsigned int counter);
-void f_add(stack_t **head, unsigned int counter);
-void f_nop(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
-void f_div(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
-void f_mod(stack_t **head, unsigned int counter);
-void f_pchar(stack_t **head, unsigned int counter);
-void f_pstr(stack_t **head, unsigned int counter);
-void f_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+void pop(stack_t **head, unsigned int counter);
+void swap(stack_t **head, unsigned int counter);
+void add(stack_t **head, unsigned int counter);
+void nop(stack_t **head, unsigned int counter);
+void sub(stack_t **head, unsigned int counter);
+void p_div(stack_t **head, unsigned int counter);
+void mul(stack_t **head, unsigned int counter);
+void mod(stack_t **head, unsigned int counter);
+void pchar(stack_t **head, unsigned int counter);
+void pstr(stack_t **head, unsigned int counter);
+void rotl(stack_t **head, unsigned int counter);
+void rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
+void queue(stack_t **head, unsigned int counter);
+void p_stack(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);

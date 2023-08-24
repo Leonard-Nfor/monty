@@ -5,7 +5,7 @@
  * @num: input
  * Return: Nothing
  */
-void f_pall(stack_t **head, unsigned int num)
+void pall(stack_t **head, unsigned int num)
 {
 	stack_t *h;
 	(void)num;

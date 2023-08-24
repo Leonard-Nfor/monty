@@ -5,7 +5,7 @@
  * @num: line number
  * Return: Nothing
  */
-void f_queue(stack_t **head, unsigned int num)
+void queue(stack_t **head, unsigned int num)
 {
 	(void)head;
 	(void)num;
