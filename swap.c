@@ -11,6 +11,7 @@ void swap(stack_t **head, unsigned int num)
 	int len = 0, m;
 
 	temp = *head;
+	/*check the len of stack */
 	while (temp != NULL)
 	{
 		temp = temp->next;
