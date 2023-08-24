@@ -7,7 +7,7 @@
 */
 void add(stack_t **head, unsigned int num)
 {
-	stack_t *h;
+	stack_t *temp;
 	int len = 0, m;
 
 	temp = *head;
